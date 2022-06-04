@@ -8,7 +8,7 @@ import LunchSection from "./Components/FoodSection/LunchSection/LunchSection";
 import Footer from "./Shared/Footer/Footer";
 function App() {
   return (
-    <div>
+    <div className='bg-white'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home></Home>}>

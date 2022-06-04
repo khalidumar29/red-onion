@@ -19,26 +19,28 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className='navbar py-3 bg-white'>
-      <div className='flex-1'>
-        <Link to='/' className='btn btn-ghost'>
-          <img className='w-full h-full' alt='' src={logo} />
-        </Link>
-      </div>
-      <div className='flex-none'>
-        <ul className='menu menu-horizontal p-0'>
-          <li>
-            <Link className='mr-3 btn btn-ghost' to={""}>
-              Log in
+    <div className='bg-white'>
+      <div className='mx-8'>
+        <div className='navbar py-3 '>
+          <div className='flex-1 '>
+            <Link to='/' className='btn btn-ghost'>
+              <img className='w-full h-full' alt='' src={logo} />
             </Link>
-          </li>
-          <li>
-            <Link className='btn btn-secondary text-white' to={""}>
-              sign up
-            </Link>
-          </li>
-        </ul>
-        {/* <div className='dropdown dropdown-end'>
+          </div>
+          <div className='flex-none'>
+            <ul className='menu menu-horizontal p-0'>
+              <li>
+                <Link className='mr-3 btn btn-ghost' to={""}>
+                  Log in
+                </Link>
+              </li>
+              <li>
+                <Link className='btn btn-secondary text-white' to={""}>
+                  sign up
+                </Link>
+              </li>
+            </ul>
+            {/* <div className='dropdown dropdown-end'>
           <label tabindex='0' className='btn btn-ghost btn-circle'>
             <div className='indicator'>
               <svg
@@ -84,6 +86,8 @@ const Navbar = () => {
             {navLink}
           </ul>
         </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );
