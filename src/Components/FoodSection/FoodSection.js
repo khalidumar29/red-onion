@@ -1,23 +1,25 @@
 import React from "react";
-
+import { Outlet } from "react-router-dom";
+import CustomLink from "../../Shared/CustomLink/CustomLink";
 const FoodSection = () => {
   return (
     <div>
-      <div class='navbar bg-base-100'>
-        <div class='flex-1'>
-          <a class='btn btn-ghost normal-case text-xl'>daisyUI</a>
-        </div>
-        <div class='flex-none'>
-          <ul class='menu menu-horizontal p-0'>
+      <div className='navbar justify-center bg-white'>
+        <div className='flex-none '>
+          <ul className='menu menu-horizontal p-0 text-xl'>
             <li>
-              <a>Item 1</a>
+              <CustomLink to={"/"}>Breakfast</CustomLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <CustomLink to={"/lunch"}>Lunch</CustomLink>
+            </li>
+            <li>
+              <CustomLink to={"/dinner"}>Dinner</CustomLink>
             </li>
           </ul>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };
