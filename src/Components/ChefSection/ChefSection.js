@@ -19,17 +19,20 @@ const ChefSection = () => {
       </div>
       <div className='py-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:gap-[7.25rem]'>
         {service.map((s) => (
-          <div key={s.id} class='card w-96 bg-base-100 shadow-xl'>
+          <div
+            key={s.id}
+            className='card lg:w-96 md:w-96 w-[21.5rem] bg-base-100 shadow-xl'
+          >
             <figure>
               <img src={s.img} alt='Shoes' />
             </figure>
-            <div class='card-body'>
+            <div className='card-body'>
               <div className='flex'>
                 <div>
                   <img className='w-[130px]' src={s.icon} alt='' srcset='' />
                 </div>
                 <div className='ml-2'>
-                  <h2 class='card-title capitalize'>{s.name}</h2>
+                  <h2 className='card-title capitalize'>{s.name}</h2>
                   <p>{s.description}</p>
                   <p>
                     <Link className='text-blue-600' to=''>

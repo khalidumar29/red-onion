@@ -2,22 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo2.png";
 const Navbar = () => {
-  let navLink = (
-    <>
-      <li>
-        <Link to={""} className='justify-between'>
-          Profile
-          <span className='badge'>New</span>
-        </Link>
-      </li>
-      <li>
-        <Link to={""}>Settings</Link>
-      </li>
-      <li>
-        <Link to={""}>Logout</Link>
-      </li>
-    </>
-  );
+  // let navLink = (
+  //   <>
+  //     <li>
+  //       <Link to={""} className='justify-between'>
+  //         Profile
+  //         <span className='badge'>New</span>
+  //       </Link>
+  //     </li>
+  //     <li>
+  //       <Link to={""}>Settings</Link>
+  //     </li>
+  //     <li>
+  //       <Link to={""}>Logout</Link>
+  //     </li>
+  //   </>
+  //);
   return (
     <div className='bg-white'>
       <div className='mx-8'>
@@ -30,12 +30,12 @@ const Navbar = () => {
           <div className='flex-none'>
             <ul className='menu menu-horizontal p-0'>
               <li>
-                <Link className='mr-3 btn btn-ghost' to={""}>
+                <Link className='mr-3 btn btn-ghost' to={"/login"}>
                   Log in
                 </Link>
               </li>
               <li>
-                <Link className='btn btn-secondary text-white' to={""}>
+                <Link className='btn btn-secondary text-white' to={"/signup"}>
                   sign up
                 </Link>
               </li>

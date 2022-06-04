@@ -3,34 +3,50 @@ import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 const Footer = () => {
   return (
-    <footer className='bg-[black]'>
-      <div class='footer p-10 text-base-content'>
+    <footer className='bg-[#191818f5]'>
+      <div className='footer p-10 text-base-content'>
         <div className='w-[200px] h-[70px]'>
           <img className='w-full h-full' src={logo} alt='' />
         </div>
         <div className='text-[white]'>
-          <span class='footer-title'>Services</span>
-          <a class='link link-hover'>Branding</a>
-          <a class='link link-hover'>Design</a>
-          <a class='link link-hover'>Marketing</a>
-          <a class='link link-hover'>Advertisement</a>
+          <span className='footer-title'>Services</span>
+          <Link to={""} className='link link-hover'>
+            Branding
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Design
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Marketing
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Advertisement
+          </Link>
         </div>
         <div className='text-[white]'>
-          <span class='footer-title'>Company</span>
-          <a class='link link-hover'>About us</a>
-          <a class='link link-hover'>Contact</a>
-          <a class='link link-hover'>Jobs</a>
-          <a class='link link-hover'>Press kit</a>
+          <span className='footer-title'>Company</span>
+          <Link to={""} className='link link-hover'>
+            About us
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Contact
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Jobs
+          </Link>
+          <Link to={""} className='link link-hover'>
+            Press kit
+          </Link>
         </div>
       </div>
-      <div className='flex justify-between capitalize text-white'>
+      <div className='lg:flex md:flex justify-between capitalize mx-8 pb-4 text-white'>
         <div>
           <h1>copyright &copy; 2022 online food</h1>
         </div>
         <div>
-          <span className='ml-8'>Privacy policy.</span>
-          <span className='ml-8'>terms of use</span>
-          <span className='ml-8'>pricing</span>
+          <span className='lg:ml-8 md:ml-8 '>Privacy policy.</span>
+          <span className='lg:ml-8 md:ml-8 ml-3'>terms of use</span>
+          <span className='lg:ml-8 md:ml-8 ml-3'>pricing</span>
         </div>
       </div>
     </footer>

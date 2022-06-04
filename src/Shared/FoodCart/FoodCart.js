@@ -3,12 +3,12 @@ import React from "react";
 const FoodCart = ({ food }) => {
   const { name, img, price, description } = food;
   return (
-    <div class='card w-96 shadow-xl'>
-      <figure class='px-10 pt-10'>
-        <img src={img} alt='Shoes' class='rounded-full' />
+    <div className='card lg:w-96 md:w-96 w-[21.5rem] shadow-xl'>
+      <figure className='px-10 pt-10'>
+        <img src={img} alt='Shoes' className='rounded-full' />
       </figure>
-      <div class='card-body items-center text-center'>
-        <h2 class='card-title'>{name}</h2>
+      <div className='card-body items-center text-center'>
+        <h2 className='card-title'>{name}</h2>
         <p>{description}</p>
         <p> ${price}</p>
       </div>
