@@ -1,9 +1,17 @@
 import React from "react";
 
-const FoodCart = () => {
+const FoodCart = ({ food }) => {
+  const { name, img, price, description } = food;
   return (
-    <div>
-      <h1>this is food cart</h1>
+    <div class='card w-96 shadow-xl'>
+      <figure class='px-10 pt-10'>
+        <img src={img} alt='Shoes' class='rounded-full' />
+      </figure>
+      <div class='card-body items-center text-center'>
+        <h2 class='card-title'>{name}</h2>
+        <p>{description}</p>
+        <p> ${price}</p>
+      </div>
     </div>
   );
 };
