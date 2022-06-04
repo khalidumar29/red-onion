@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import DinnerSection from "./Components/FoodSection/DinnerSection/DinnerSection";
 import BreakfastSection from "./Components/FoodSection/BreakfastSection/BreakfastSection";
 import LunchSection from "./Components/FoodSection/LunchSection/LunchSection";
+import Footer from "./Shared/Footer/Footer";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
           <Route path='/dinner' element={<DinnerSection />}></Route>
         </Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,59 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
-import "./Footer.css";
 const Footer = () => {
   return (
-    <footer>
-      <div className='footer'>
-        <div className='logo-footer-section'>
-          <div className='footer-logo'>
-            <img src={logo} alt='' />
-          </div>
-          <div className='footer-description'>
-            {/* firs one footer description */}
-            <ul>
-              <li>
-                <Link to=''>About Online Food</Link>
-              </li>
-              <li>
-                <Link to=''>Read our blog</Link>
-              </li>
-              <li>
-                <Link to=''>Sign up to deliver</Link>
-              </li>
-              <li>
-                <Link to=''>Add your restaurant</Link>
-              </li>
-            </ul>
-            {/* second one foote descrioption */}
-            <ul>
-              <li>
-                <Link to=''>About Online Food</Link>
-              </li>
-              <li>
-                <Link to=''>About Online Food</Link>
-              </li>
-              <li>
-                <Link to=''>About Online Food</Link>
-              </li>
-              <li>
-                <Link to=''>About Online Food</Link>
-              </li>
-            </ul>
-          </div>
+    <footer className='bg-[black]'>
+      <div class='footer p-10 text-base-content'>
+        <div className='w-[200px] h-[70px]'>
+          <img className='w-full h-full' src={logo} alt='' />
         </div>
-        <div className='copy-right-div'>
-          <div>
-            <p>
-              <span>Copyright</span> &copy; 2022 online food
-            </p>
-          </div>
-          <div className='footer-link'>
-            <Link to=''>Privacy Policy.</Link>
-            <Link to=''>Terms od Use.</Link>
-            <Link to=''>Pricing</Link>
-          </div>
+        <div className='text-[white]'>
+          <span class='footer-title'>Services</span>
+          <a class='link link-hover'>Branding</a>
+          <a class='link link-hover'>Design</a>
+          <a class='link link-hover'>Marketing</a>
+          <a class='link link-hover'>Advertisement</a>
+        </div>
+        <div className='text-[white]'>
+          <span class='footer-title'>Company</span>
+          <a class='link link-hover'>About us</a>
+          <a class='link link-hover'>Contact</a>
+          <a class='link link-hover'>Jobs</a>
+          <a class='link link-hover'>Press kit</a>
+        </div>
+      </div>
+      <div className='flex justify-between capitalize text-white'>
+        <div>
+          <h1>copyright &copy; 2022 online food</h1>
+        </div>
+        <div>
+          <span className='ml-8'>Privacy policy.</span>
+          <span className='ml-8'>terms of use</span>
+          <span className='ml-8'>pricing</span>
         </div>
       </div>
     </footer>
